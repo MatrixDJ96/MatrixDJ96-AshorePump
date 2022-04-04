@@ -1,4 +1,8 @@
 local check_offshore_pump = function(entity, player_index)
+	if not settings.global['matrixdj96-ashorepump-enable-exp'].value then
+		return
+	end
+
 	local name = nil
 	local ghost = false
 
